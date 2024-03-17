@@ -32,9 +32,7 @@ On the board, by giving required input, the LEDs starts to glow light, indicatin
 Load the Bit file into the SPARTAN 6 FPGA 
 
 ## Logic Diagram :
-### Half Adder:
-
-![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/0e1ecb96-0c25-4556-832b-aeeedfdfe7b9)
+### Full Adder:
 
 ## VERILOG CODE:
 ```
@@ -42,16 +40,21 @@ DEVELOPED BY:SHARVINA SRI
 REGISTER NUMBER:212222060238
 ```
 ```
-module halfadder( a,b,sum,carry);
-input a,b;
-output sum,carry;
-xor g1(sum,a,b);
-and g2(carry,a,b);
-endmodule
+  module fulladder(a,b,cin,sum,carry);
+       input a,b,cin;
+       output sum,carry;
+       wire w1,w2,w3;
+       xor g1(w1,a,b);
+       xor g2(sum,w1,cin);
+       and g3(w2,w1,cin);
+       and  g4(w3,a,b);
+       or g5(carry,w2,w3);
+  endmodule
+
 ```
 
 ## OUTPUT:
-![image](https://github.com/Sharvina-SRI/VLSI-LAB-EXP-1/assets/162664906/61855771-5d01-4b20-b1ed-a76591969b73)
+
 
 
 ## RESULT:
