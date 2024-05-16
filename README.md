@@ -1,5 +1,6 @@
-Experiment number: 01
-Date: 16.2.24 / 23.2.24
+# Experiment number: 01
+
+# Date: 16.2.24 / 23.2.24
 # SIMULATION AND IMPLEMENTATION OF LOGIC GATES, ADDERS & SUBTRACTOR
 ## AIM: 
 To simulate and synthesis Logic Gates,Adders and Subtractor using Xilinx ISE.
